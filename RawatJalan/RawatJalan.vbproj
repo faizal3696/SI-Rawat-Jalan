@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA330D45-B923-4E76-A04B-17A2F98CA8BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RawatJalan.My.MyApplication</StartupObject>
+    <RootNamespace>RawatJalan</RootNamespace>
+    <AssemblyName>RawatJalan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>id</TargetCulture>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RawatJalan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RawatJalan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>72A12B00E726FE0F24C1E7D1F18F968EB758F4AB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RawatJalan_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Color.vb" />
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObatDesign.Designer.vb">
+      <DependentUpon>ObatDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ObatDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokter.Designer.vb">
+      <DependentUpon>Dokter.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DokterReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DokterReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DokterDesign.Designer.vb">
+      <DependentUpon>DokterDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DokterDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Obat.Designer.vb">
+      <DependentUpon>Obat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Obat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObatReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ObatReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pasien.Designer.vb">
+      <DependentUpon>Pasien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pasien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasienDesign.Designer.vb">
+      <DependentUpon>PasienDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasienDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasienReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PasienReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pemakai.Designer.vb">
+      <DependentUpon>Pemakai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pemakai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PemakaiDesign.Designer.vb">
+      <DependentUpon>PemakaiDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PemakaiDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PemakaiReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PemakaiReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pendaftaran.Designer.vb">
+      <DependentUpon>Pendaftaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pendaftaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendaftaranDesign.Designer.vb">
+      <DependentUpon>PendaftaranDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PendaftaranDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendaftaranReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PendaftaranReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Poli.Designer.vb">
+      <DependentUpon>Poli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Poli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliDesign.Designer.vb">
+      <DependentUpon>PoliDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PoliDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoliReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resep.Designer.vb">
+      <DependentUpon>Resep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResepReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResepReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObatDesign.resx">
+      <DependentUpon>ObatDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokter.resx">
+      <DependentUpon>Dokter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DokterDesign.resx">
+      <DependentUpon>DokterDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DokterReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DokterReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obat.resx">
+      <DependentUpon>Obat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObatReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ObatReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pasien.resx">
+      <DependentUpon>Pasien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasienDesign.resx">
+      <DependentUpon>PasienDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasienReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PasienReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pemakai.resx">
+      <DependentUpon>Pemakai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemakaiDesign.resx">
+      <DependentUpon>PemakaiDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemakaiReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PemakaiReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pendaftaran.resx">
+      <DependentUpon>Pendaftaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendaftaranDesign.resx">
+      <DependentUpon>PendaftaranDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PendaftaranReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PendaftaranReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poli.resx">
+      <DependentUpon>Poli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliDesign.resx">
+      <DependentUpon>PoliDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PoliReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resep.resx">
+      <DependentUpon>Resep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResepReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ResepReport.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="RawatJalan_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor_Male_icon-icons.com_75051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor_Male_icon-icons.com_75051%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-03_icon-icons.com_73941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical_icon_stethoscope_icon-icons.com_66663.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-05_icon-icons.com_73942.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient_Male_icon-icons.com_75053.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-06_icon-icons.com_73937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-06_icon-icons.com_739371.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\community_users_12977.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitebrands - logo rumah sakit indonesia dunia -06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp1848587.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1496434648_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\docs_40849.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
